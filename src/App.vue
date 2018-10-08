@@ -6,15 +6,13 @@
 
 <script>
 import 'element-ui/lib/theme-chalk/index.css'
+import './assets/normalize.css'
 export default {
   name: 'App'
 }
 </script>
 
 <style lang="stylus">
-body
-  padding-top: 80px
-
 .fa-icon
   width: auto
   height: 1em /* 或任意其它字体大小相对值 */

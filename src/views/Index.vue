@@ -1,17 +1,13 @@
 <template>
   <section>
     <mu-header></mu-header>
-    <el-container>
-      <el-main class="index">
-        <h1>{{ nickName }},{{ msg }}</h1>
-        <el-table :data="[user]">
-          <el-table-column prop="userName" label="用户名"></el-table-column>
-          <el-table-column prop="age" label="年龄"></el-table-column>
-          <el-table-column prop="nickName" label="昵称"></el-table-column>
-          <el-table-column prop="vip" label="等级"></el-table-column>
-        </el-table>
-      </el-main>
-    </el-container>
+    <el-row>
+      <el-col :span="24">
+        <router-link to="/" title="商品">
+          <img src="../assets/home_banner.jpg" alt="精品好货，一网打尽">
+        </router-link>
+      </el-col>
+    </el-row>
     <mu-footer></mu-footer>
   </section>
 </template>

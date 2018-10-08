@@ -19,7 +19,7 @@ export default new Router({
       meta: {
         title: '首页',
         // true为不进行权限验证,false或不写默认进行验证
-        auth: false
+        auth: true
       }
     },
     {
