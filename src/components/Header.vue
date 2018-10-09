@@ -36,27 +36,10 @@
             </router-link>
           </li>
           <li class="header-icon">
-            <icon name="search"></icon>
+            <a class="btn-search" href="javascript:;"></a>
           </li>
           <li class="header-icon submenu">
-            <icon name="regular/user"></icon>
-            <ul>
-              <li>
-                <router-link to="/cart" title="我的购物车">
-                  我的购物车
-                </router-link>
-              </li>
-              <li>
-                <router-link to="/order" title="我的订单">
-                  我的订单
-                </router-link>
-              </li>
-              <li>
-                <router-link to="/order" title="安全退出">
-                  安全退出
-                </router-link>
-              </li>
-            </ul>
+            <mu-ddm></mu-ddm>
           </li>
         </ul>
       </el-col>
@@ -65,9 +48,13 @@
 </template>
 
 <script>
+import MuDdm from './DropDownMenu'
 import { mapGetters } from 'vuex'
 export default {
   name: 'Header',
+  components: {
+    MuDdm
+  },
   data () {
     return {
 
@@ -97,6 +84,7 @@ export default {
   max-width 570px
 .header-nav
   text-align center
+  padding-bottom 30px
   &>ul>li
     display inline-block
     width 10%
@@ -108,10 +96,14 @@ export default {
       &:nth-child(2n)
         font-size 1.4rem
 .header-icon
-  .fa-icon
-    font-size 3.5rem
-    position relative
-    top -0.9rem
+  a
+    display inline-block
+    width 45px
+    height 45px
+  .btn-search
+    background url(../assets/icon_search.png)
+  .btn-user
+    background url(../assets/icon_user.png)
 .submenu
   ul
     display none
