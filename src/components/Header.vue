@@ -38,7 +38,7 @@
           <li class="header-icon">
             <a class="btn-search" href="javascript:;"></a>
           </li>
-          <li class="header-icon submenu">
+          <li class="header-icon">
             <mu-ddm></mu-ddm>
           </li>
         </ul>
@@ -96,15 +96,11 @@ export default {
       &:nth-child(2n)
         font-size 1.4rem
 .header-icon
+  position relative
   a
     display inline-block
     width 45px
     height 45px
   .btn-search
     background url(../assets/icon_search.png)
-  .btn-user
-    background url(../assets/icon_user.png)
-.submenu
-  ul
-    display none
 </style>
