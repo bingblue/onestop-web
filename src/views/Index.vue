@@ -39,29 +39,35 @@
         <mu-sort></mu-sort>
       </el-col>
     </el-row>
+    <mu-slide></mu-slide>
     <mu-title hero="NEW" text="PRODUCTS" subtext="新品上市"></mu-title>
     <el-row>
       <el-col :span="12" :offset="6">
         <mu-sort></mu-sort>
       </el-col>
     </el-row>
+    <mu-featured></mu-featured>
     <mu-footer></mu-footer>
   </section>
 </template>
 
 <script>
+import MuFeatured from '../components/Featured'
 import MuHeader from '../components/Header'
 import MuFooter from '../components/Footer'
 import MuTitle from '../components/Title'
+import MuSlide from '../components/Slide'
 import MuSort from '../components/Sort'
 import { mapGetters } from 'vuex'
 
 export default {
   name: 'Index',
   components: {
+    MuFeatured,
     MuHeader,
     MuFooter,
     MuTitle,
+    MuSlide,
     MuSort
   },
   data () {
