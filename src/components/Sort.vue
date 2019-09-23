@@ -41,6 +41,12 @@ ul
     width 16%
     text-align center
     a
+      /* 文本溢出省略 */
+      display block
+      overflow hidden
+      text-overflow ellipsis
+      white-space nowrap
+      /* 文本溢出省略END */
       color #b3b3b3
       font-size 2rem
     &.active a, &:hover a

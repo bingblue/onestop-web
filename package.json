@@ -11,22 +11,22 @@
     "lint": "vue-cli-service lint --fix"
   },
   "dependencies": {
-    "axios": "^0.18.0",
-    "element-ui": "^2.4.6",
-    "vue": "^2.5.17",
-    "vue-awesome": "^3.1.0",
-    "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
+    "axios": "*",
+    "element-ui": "*",
+    "vue": "*",
+    "vue-awesome": "*",
+    "vue-router": "*",
+    "vuex": "*"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.1",
-    "@vue/cli-plugin-eslint": "^3.0.1",
-    "@vue/cli-service": "^3.0.1",
-    "@vue/eslint-config-standard": "^3.0.1",
-    "lint-staged": "^7.2.2",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2",
-    "vue-template-compiler": "^2.5.17"
+    "@vue/cli-plugin-babel": "*",
+    "@vue/cli-plugin-eslint": "*",
+    "@vue/cli-service": "*",
+    "@vue/eslint-config-standard": "*",
+    "lint-staged": "*",
+    "stylus": "*",
+    "stylus-loader": "*",
+    "vue-template-compiler": "*"
   },
   "eslintConfig": {
     "root": true,

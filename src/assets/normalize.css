@@ -548,6 +548,12 @@ a {
   text-decoration: none;
   font-size: 1.4rem;
 }
+/* 文本溢出省略 */
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

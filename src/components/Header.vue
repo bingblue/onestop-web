@@ -1,14 +1,12 @@
 <template>
   <div>
     <el-row>
-      <el-col :span="12" :offset="6" class="text-center header-logo">
+      <el-col :span="4" :offset="2" class="text-center header-logo">
         <router-link to="/" title="one stop">
           <img class="header-logo-img" src="../assets/logo_index.png" alt="one stop logo">
         </router-link>
       </el-col>
-    </el-row>
-    <el-row>
-      <el-col :span="24" class="header-nav">
+      <el-col :span="18" class="header-nav">
         <ul>
           <li>
             <router-link to="/" title="首页">
@@ -76,8 +74,9 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-.header-logo
-  padding 50px 0
+.header-logo,
+.header-nav
+  padding 50px 0 20px 0
 .text-center
   text-align center
 .header-logo-img
@@ -93,6 +92,11 @@ export default {
       color #999
       font-size 1.8rem
       text-align center
+      /* 文本溢出省略 */
+      overflow hidden
+      text-overflow ellipsis
+      white-space nowrap
+      /* 文本溢出省略END */
       &:nth-child(2n)
         font-size 1.4rem
 .header-icon
