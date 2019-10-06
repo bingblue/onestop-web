@@ -86,7 +86,7 @@ export default {
 
 <style scoped lang="stylus">
 h1
-  font-size 24px
+  font-size 2.4rem
   text-align center
   color #0099ff
   margin-bottom 80px

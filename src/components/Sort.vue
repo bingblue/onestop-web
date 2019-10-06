@@ -35,7 +35,7 @@ export default {
 <style scoped lang="stylus">
 ul
   width 100%
-  margin 20px 0
+  margin 20px 0 40px
   li
     display inline-block
     width 16%
