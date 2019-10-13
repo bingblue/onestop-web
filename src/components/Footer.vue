@@ -1,6 +1,6 @@
 <template>
   <el-container>
-    <el-footer>
+    <el-footer height="auto">
       <div class="menu">
         <ul>
           <li><router-link to="/" title="关于我们">关于我们</router-link></li>
@@ -43,22 +43,30 @@ export default {
 footer
   display flex
   flex-direction column
-  border-top 1px solid #0099ff
+  border-top 1px solid #eee
   justify-content center
-  padding 60px 0 20px
+  align-items center
+  padding 42px 0 20px
   .menu
-    display flex
-    flex-basis 100%
-    align-items flex-start
+    width 70%
+    text-align center
     ul
-      display flex
-      justify-content space-around
+      display inline-block
+      // width calc(25% - 8px)
+      width 25%
       li
-        flex-direction column
+        padding 12px 0
+        a
+          color #828282
+          font-size 1.4rem
   p
     display flex
-    flex-basis 100%
-    border-top 1px solid #0099ff
+    width 100%
+    color #828282
+    font-size 1.4rem
+    border-top 1px solid #eee
     justify-content center
     align-items center
+    margin-top 42px
+    padding-top 20px
 </style>
