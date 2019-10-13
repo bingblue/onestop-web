@@ -1,24 +1,28 @@
 <template>
-  <ul>
-    <li class="active">
-      <router-link to="/" title="全部分类">全部分类</router-link>
-    </li>
-    <li>
-      <router-link to="/" title="美妆保养">美妆保养</router-link>
-    </li>
-    <li>
-      <router-link to="/" title="美瞳">美瞳</router-link>
-    </li>
-    <li>
-      <router-link to="/" title="药品、保健品">药品、保健品</router-link>
-    </li>
-    <li>
-      <router-link to="/" title="零食">零食</router-link>
-    </li>
-    <li>
-      <router-link to="/" title="潮流服装">潮流服装</router-link>
-    </li>
-  </ul>
+  <el-row>
+    <el-col :span="12" :offset="6" :xs="{span: 22, offset: 1}">
+      <ul>
+        <li class="active">
+          <router-link to="/" title="全部分类">全部分类</router-link>
+        </li>
+        <li>
+          <router-link to="/" title="美妆保养">美妆保养</router-link>
+        </li>
+        <li>
+          <router-link to="/" title="美瞳">美瞳</router-link>
+        </li>
+        <li>
+          <router-link to="/" title="药品、保健品">药品、保健品</router-link>
+        </li>
+        <li>
+          <router-link to="/" title="零食">零食</router-link>
+        </li>
+        <li>
+          <router-link to="/" title="潮流服装">潮流服装</router-link>
+        </li>
+      </ul>
+    </el-col>
+  </el-row>
 </template>
 
 <script>

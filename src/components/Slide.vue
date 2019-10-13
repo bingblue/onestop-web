@@ -1,40 +1,42 @@
 <template>
-  <div class="slide">
-    <a href="javascrip:;" class="pre"><img src="../assets/index_slide_pre.png" alt="pre"></a>
-    <div class="wrap">
-      <ul>
-        <li>
-          <router-link to="/" title="">
-            <img src="../assets/index_slide_1.jpg" alt="商务提包">
-            <span class="name">商务提包</span>
-            <span class="price">￥330</span>
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/" title="">
-            <img src="../assets/index_slide_2.jpg" alt="商务鞋子">
-            <span class="name">商务鞋子</span>
-            <span class="price">￥230</span>
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/" title="">
-            <img src="../assets/index_slide_3.jpg" alt="商务眼镜">
-            <span class="name">商务眼镜</span>
-            <span class="price">￥130</span>
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/" title="">
-            <img src="../assets/index_slide_4.jpg" alt="商务帽子">
-            <span class="name">商务帽子</span>
-            <span class="price">￥30</span>
-          </router-link>
-        </li>
-      </ul>
-    </div>
-    <a href="javascrip:;" class="next"><img src="../assets/index_slide_next.png" alt="pre"></a>
-  </div>
+  <el-row>
+    <el-col :span="18" :offset="3" :xs="{span: 22, offset: 1}" class="slide">
+      <a href="javascrip:;" class="pre"><img src="../assets/index_slide_pre.png" alt="pre"></a>
+      <div class="wrap">
+        <ul>
+          <li>
+            <router-link to="/" title="">
+              <img src="../assets/index_slide_1.jpg" alt="商务提包">
+              <span class="name">商务提包</span>
+              <span class="price">￥330</span>
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/" title="">
+              <img src="../assets/index_slide_2.jpg" alt="商务鞋子">
+              <span class="name">商务鞋子</span>
+              <span class="price">￥230</span>
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/" title="">
+              <img src="../assets/index_slide_3.jpg" alt="商务眼镜">
+              <span class="name">商务眼镜</span>
+              <span class="price">￥130</span>
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/" title="">
+              <img src="../assets/index_slide_4.jpg" alt="商务帽子">
+              <span class="name">商务帽子</span>
+              <span class="price">￥30</span>
+            </router-link>
+          </li>
+        </ul>
+      </div>
+      <a href="javascrip:;" class="next"><img src="../assets/index_slide_next.png" alt="pre"></a>
+    </el-col>
+  </el-row>
 </template>
 
 <script>
@@ -51,9 +53,8 @@ export default {
 <style scoped lang="stylus">
 .slide
   position relative
-  width 60%
   padding 0 4%
-  margin 0 auto
+  margin-bottom 120px
   .pre, .next
     display inline-block
     width 3%
@@ -67,7 +68,6 @@ export default {
   .wrap
     overflow hidden
     width 100%
-    margin-bottom 120px
   ul
     li
       float left

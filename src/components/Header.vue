@@ -1,12 +1,12 @@
 <template>
   <div>
     <el-row>
-      <el-col :span="4" :offset="2" class="text-center header-logo">
+      <el-col :span="4" :offset="3" :xs="{span: 6, offset: 1}" class="text-center header-logo">
         <router-link to="/" title="one stop">
           <img class="header-logo-img" src="../assets/logo_index.png" alt="one stop logo">
         </router-link>
       </el-col>
-      <el-col :span="18" class="header-nav">
+      <el-col :span="17" class="header-nav">
         <ul>
           <li>
             <router-link to="/" title="首页">

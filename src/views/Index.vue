@@ -1,6 +1,7 @@
 <template>
   <section>
     <mu-header></mu-header>
+    <!-- Banner -->
     <el-row>
       <el-col :span="24">
         <router-link to="/" title="商品">
@@ -8,14 +9,15 @@
         </router-link>
       </el-col>
     </el-row>
-    <mu-title></mu-title>
+    <!-- 一站承诺 -->
+    <mu-title hero="ONE STOP" text="PROMISE" subtext="一站承诺"></mu-title>
     <el-row>
-      <el-col :span="18" :offset="3">
+      <el-col :span="18" :offset="3" :xs="{span: 22, offset: 1}">
         <img src="../assets/index_bg1.jpg" alt="一站承诺">
       </el-col>
     </el-row>
-    <el-row>
-      <el-col :span="16" :offset="4" class="bg-sort">
+    <el-row class="bg-sort">
+      <el-col :span="18" :offset="3" :xs="{span: 22, offset: 1}">
         <router-link to="/" title="美妆保养">
           <img src="../assets/index_bg_beauty.jpg" alt="美妆保养">
         </router-link>
@@ -33,19 +35,13 @@
         </router-link>
       </el-col>
     </el-row>
+    <!-- 热卖商品 -->
     <mu-title hero="HOT" text="PRODUCTS" subtext="热卖商品"></mu-title>
-    <el-row>
-      <el-col :span="12" :offset="6">
-        <mu-sort></mu-sort>
-      </el-col>
-    </el-row>
+    <mu-sort></mu-sort>
     <mu-slide></mu-slide>
+    <!-- 新品上市 -->
     <mu-title hero="NEW" text="PRODUCTS" subtext="新品上市"></mu-title>
-    <el-row>
-      <el-col :span="12" :offset="6">
-        <mu-sort></mu-sort>
-      </el-col>
-    </el-row>
+    <mu-sort></mu-sort>
     <mu-featured></mu-featured>
     <mu-footer></mu-footer>
   </section>
