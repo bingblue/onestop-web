@@ -30,7 +30,7 @@
       <span>沪ICP备16024217号</span>
     </el-col>
   </el-row>
-  <el-backtop target=".scroll" :visibility-height="50"></el-backtop>
+  <el-backtop target=".scroll" />
 </footer>
 </template>
 

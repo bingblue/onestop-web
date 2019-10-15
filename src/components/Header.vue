@@ -37,7 +37,7 @@
             <a class="btn-search" href="javascript:;"></a>
           </li>
           <li class="header-icon">
-            <mu-ddm></mu-ddm>
+            <mu-ddm />
           </li>
         </ul>
       </el-col>

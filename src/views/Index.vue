@@ -1,6 +1,6 @@
 <template>
   <section class="scroll">
-    <mu-header></mu-header>
+    <mu-header />
     <!-- Banner -->
     <el-row>
       <el-col :span="24">
@@ -10,7 +10,7 @@
       </el-col>
     </el-row>
     <!-- 一站承诺 -->
-    <mu-title hero="ONE STOP" text="PROMISE" subtext="一站承诺"></mu-title>
+    <mu-title hero="ONE STOP" text="PROMISE" subtext="一站承诺" />
     <el-row>
       <el-col :span="18" :offset="3" :xs="{span: 22, offset: 1}">
         <img src="../assets/index_bg1.jpg" alt="一站承诺">
@@ -36,14 +36,14 @@
       </el-col>
     </el-row>
     <!-- 热卖商品 -->
-    <mu-title hero="HOT" text="PRODUCTS" subtext="热卖商品"></mu-title>
-    <mu-sort></mu-sort>
-    <mu-slide></mu-slide>
+    <mu-title hero="HOT" text="PRODUCTS" subtext="热卖商品" />
+    <mu-sort />
+    <mu-slide />
     <!-- 新品上市 -->
-    <mu-title hero="NEW" text="PRODUCTS" subtext="新品上市"></mu-title>
-    <mu-sort></mu-sort>
-    <mu-featured></mu-featured>
-    <mu-footer></mu-footer>
+    <mu-title hero="NEW" text="PRODUCTS" subtext="新品上市" />
+    <mu-sort />
+    <mu-featured />
+    <mu-footer />
   </section>
 </template>
 
