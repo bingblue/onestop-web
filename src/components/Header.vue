@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <header>
     <el-row>
       <el-col :span="4" :offset="3" :xs="{span: 6, offset: 1}" class="text-center header-logo">
         <router-link to="/" title="one stop">
-          <img class="header-logo-img" src="../assets/logo_index.png" alt="one stop logo">
+          <img class="header-logo-img" src="@/assets/logo_index.png" alt="one stop logo">
         </router-link>
       </el-col>
       <el-col :span="17" class="header-nav">
@@ -42,11 +42,11 @@
         </ul>
       </el-col>
     </el-row>
-  </div>
+  </header>
 </template>
 
 <script>
-import MuDdm from './DropDownMenu'
+import MuDdm from '@/components/index/DropDownMenu'
 import { mapGetters } from 'vuex'
 export default {
   name: 'Header',

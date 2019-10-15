@@ -38,9 +38,9 @@ a
   width 45px
   height 45px
 .btn-search
-  background url(../assets/icon_search.png)
+  background url(../../assets/icon_search.png)
 .btn-user
-  background url(../assets/icon_user.png)
+  background url(../../assets/icon_user.png)
 .submenu
   position absolute
   z-index 99

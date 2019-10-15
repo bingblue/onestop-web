@@ -4,7 +4,7 @@
       <ul>
         <li>
           <router-link to="/" title="某某新款帽子JANS">
-            <img src="../assets/index_featured_1.jpg" alt="精选商品">
+            <img src="@/assets/index_featured_1.jpg" alt="精选商品">
             <span class="name">某某新款帽子JANS</span>
             <span class="address">美国 · 需要提前5天预约</span>
             <span class="info">查看详情</span>
@@ -13,7 +13,7 @@
         </li>
         <li>
           <router-link to="/" title="某某新款帽子JANS">
-            <img src="../assets/index_featured_1.jpg" alt="精选商品">
+            <img src="@/assets/index_featured_1.jpg" alt="精选商品">
             <span class="name">某某新款帽子JANS</span>
             <span class="address">美国 · 需要提前5天预约</span>
             <span class="info">查看详情</span>
@@ -22,7 +22,7 @@
         </li>
         <li>
           <router-link to="/" title="某某新款帽子JANS">
-            <img src="../assets/index_featured_1.jpg" alt="精选商品">
+            <img src="@/assets/index_featured_1.jpg" alt="精选商品">
             <span class="name">某某新款帽子JANS</span>
             <span class="address">美国 · 需要提前5天预约</span>
             <span class="info">查看详情</span>
@@ -31,7 +31,7 @@
         </li>
         <li>
           <router-link to="/" title="某某新款帽子JANS">
-            <img src="../assets/index_featured_1.jpg" alt="精选商品">
+            <img src="@/assets/index_featured_1.jpg" alt="精选商品">
             <span class="name">某某新款帽子JANS</span>
             <span class="address">美国 · 需要提前5天预约</span>
             <span class="info">查看详情</span>

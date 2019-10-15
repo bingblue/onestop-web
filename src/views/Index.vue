@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="scroll">
     <mu-header></mu-header>
     <!-- Banner -->
     <el-row>
@@ -48,12 +48,12 @@
 </template>
 
 <script>
-import MuFeatured from '../components/Featured'
-import MuHeader from '../components/Header'
-import MuFooter from '../components/Footer'
-import MuTitle from '../components/Title'
-import MuSlide from '../components/Slide'
-import MuSort from '../components/Sort'
+import MuHeader from '@/components/Header'
+import MuFooter from '@/components/Footer'
+import MuSort from '@/components/index/Sort'
+import MuSlide from '@/components/index/Slide'
+import MuTitle from '@/components/index/Title'
+import MuFeatured from '@/components/index/Featured'
 import { mapGetters } from 'vuex'
 
 export default {

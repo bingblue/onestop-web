@@ -20,7 +20,7 @@
         </ul>
       </div>
       <div class="footer-bg">
-        <router-link to="/" title="recommend"><img src="../assets/footer_bg.png"/></router-link>
+        <router-link to="/" title="recommend"><img src="@/assets/footer_bg.png"/></router-link>
       </div>
     </el-col>
   </el-row>
@@ -30,6 +30,7 @@
       <span>沪ICP备16024217号</span>
     </el-col>
   </el-row>
+  <el-backtop target=".scroll" :visibility-height="50"></el-backtop>
 </footer>
 </template>
 
