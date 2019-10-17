@@ -30,7 +30,7 @@
       <span>沪ICP备16024217号</span>
     </el-col>
   </el-row>
-  <el-backtop target=".scroll" />
+  <el-backtop target="#app" />
 </footer>
 </template>
 

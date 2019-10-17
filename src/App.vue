@@ -21,4 +21,9 @@ export default {
   max-height: 100%
   position: relative
   top: 1px
+
+/* ElementUI的backTop组件生效 */
+#app
+  height 100vh
+  overflow auto
 </style>

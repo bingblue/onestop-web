@@ -1,5 +1,5 @@
 <template>
-  <section class="scroll">
+  <section>
     <mu-header />
     <!-- Banner -->
     <el-row>

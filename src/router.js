@@ -7,6 +7,7 @@ import Index from './views/Index'
 // const Index = () => import('./views/Index')
 const Reg = () => import('./views/Reg')
 const Login = () => import('./views/Login')
+const Test = () => import('./views/Test')
 
 Vue.use(Router)
 
@@ -37,6 +38,15 @@ export default new Router({
       component: Login,
       meta: {
         title: '用户登录',
+        auth: true
+      }
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: Test,
+      meta: {
+        title: '测试页面',
         auth: true
       }
     },
