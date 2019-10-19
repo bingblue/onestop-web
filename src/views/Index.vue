@@ -5,7 +5,7 @@
     <el-row>
       <el-col :span="24">
         <router-link to="/" title="商品">
-          <img src="../assets/home_banner.jpg" alt="精品好货，一网打尽">
+          <img src="@/assets/index/home_banner.jpg" alt="精品好货，一网打尽">
         </router-link>
       </el-col>
     </el-row>
@@ -13,25 +13,25 @@
     <mu-title hero="ONE STOP" text="PROMISE" subtext="一站承诺" />
     <el-row>
       <el-col :span="18" :offset="3" :xs="{span: 22, offset: 1}">
-        <img src="../assets/index_bg1.jpg" alt="一站承诺">
+        <img src="@/assets/index/index_bg1.jpg" alt="一站承诺">
       </el-col>
     </el-row>
     <el-row class="bg-sort">
       <el-col :span="18" :offset="3" :xs="{span: 22, offset: 1}">
         <router-link to="/" title="美妆保养">
-          <img src="../assets/index_bg_beauty.jpg" alt="美妆保养">
+          <img src="@/assets/index/index_bg_beauty.jpg" alt="美妆保养">
         </router-link>
         <router-link to="/" title="美瞳">
-          <img src="../assets/index_bg_cosmetic.jpg" alt="美瞳">
+          <img src="@/assets/index/index_bg_cosmetic.jpg" alt="美瞳">
         </router-link>
         <router-link to="/" title="药品、保健品">
-          <img src="../assets/index_bg_medicines.jpg" alt="药品、保健品">
+          <img src="@/assets/index/index_bg_medicines.jpg" alt="药品、保健品">
         </router-link>
         <router-link to="/" title="零食">
-          <img src="../assets/index_bg_snacks.jpg" alt="零食">
+          <img src="@/assets/index/index_bg_snacks.jpg" alt="零食">
         </router-link>
         <router-link to="/" title="潮流服装">
-          <img src="../assets/index_bg_trend.jpg" alt="潮流服装">
+          <img src="@/assets/index/index_bg_trend.jpg" alt="潮流服装">
         </router-link>
       </el-col>
     </el-row>
