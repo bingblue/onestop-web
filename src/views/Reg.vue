@@ -43,15 +43,11 @@
 </template>
 
 <script>
-import MuHeader from '../components/Header'
-import MuFooter from '../components/Footer'
 import API from '../common/api'
 import qs from 'qs'
 export default {
   name: 'Reg',
   components: {
-    MuHeader,
-    MuFooter
   },
   created () {
     this.createCode()

@@ -26,14 +26,10 @@
 </template>
 
 <script>
-import MuHeader from '../components/Header'
-import MuFooter from '../components/Footer'
 import { mapActions, mapGetters } from 'vuex'
 export default {
   name: 'Login',
   components: {
-    MuHeader,
-    MuFooter
   },
   data () {
     return {

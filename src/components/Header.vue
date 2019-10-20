@@ -35,11 +35,11 @@
           </li>
           <li class="header-icon">
             <a class="btn-search" href="javascript:;" title="搜索">
-              <iconfont icon="search" />
+              <mu-iconfont icon="search" />
             </a>
           </li>
           <li class="header-icon">
-            <mu-ddm />
+            <mu-dropmenu />
           </li>
         </ul>
       </el-col>
@@ -48,12 +48,12 @@
 </template>
 
 <script>
-import MuDdm from '@/components/layout/DropDownMenu'
+import MuDropmenu from '@/components/layout/Dropmenu'
 import { mapGetters } from 'vuex'
 export default {
   name: 'Header',
   components: {
-    MuDdm
+    MuDropmenu
   },
   data () {
     return {

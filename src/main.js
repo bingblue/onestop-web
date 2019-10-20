@@ -8,17 +8,11 @@ import router from './router'
  */
 import store from './store'
 /**
- * 引入iconfont
- */
-import Iconfont from '@/components/Iconfont'
-
-/**
  * 引入Element
  */
 import ElementUI from 'element-ui'
 // 按需引入
 // import { Button, Select, Loading, MessageBox, Notification, Message } from 'element-ui'
-
 // Vue.use(Button)
 // Vue.use(Select)
 // Vue.use(Loading.directive)
@@ -29,14 +23,20 @@ import ElementUI from 'element-ui'
 // Vue.prototype.$prompt = MessageBox.prompt
 // Vue.prototype.$notify = Notification
 // Vue.prototype.$message = Message
-
 /**
  * axios
  */
 import Axios from 'axios'
-
-Vue.component('iconfont', Iconfont)
+/**
+ * 引入iconfont
+ */
+import MuIconfont from '@/components/Iconfont'
+import MuHeader from '@/components/Header'
+import MuFooter from '@/components/Footer'
 Vue.use(ElementUI)
+Vue.component('mu-iconfont', MuIconfont)
+Vue.component('mu-header', MuHeader)
+Vue.component('mu-footer', MuFooter)
 Vue.prototype.$http = Axios
 
 /**

@@ -1,6 +1,6 @@
 <template>
   <div @mouseenter="show = true" @mouseleave="show = false">
-    <a class="btn-user" href="javascript:;"><iconfont icon="user" /></a>
+    <a class="btn-user" href="javascript:;"><mu-iconfont icon="user" /></a>
     <ul class="submenu triangle" v-if="show">
       <li>
         <router-link to="/cart" title="我的购物车">
@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: 'DropDownMenu',
+  name: 'Dropmenu',
   data () {
     return {
       show: false

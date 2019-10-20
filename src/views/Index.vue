@@ -48,8 +48,6 @@
 </template>
 
 <script>
-import MuHeader from '@/components/Header'
-import MuFooter from '@/components/Footer'
 import MuSort from '@/components/index/Sort'
 import MuSlide from '@/components/index/Slide'
 import MuTitle from '@/components/index/Title'
@@ -60,8 +58,6 @@ export default {
   name: 'Index',
   components: {
     MuFeatured,
-    MuHeader,
-    MuFooter,
     MuTitle,
     MuSlide,
     MuSort
