@@ -3,7 +3,7 @@
     <el-row>
       <el-col :span="4" :offset="3" :xs="{span: 6, offset: 1}" class="text-center header-logo">
         <router-link to="/" title="one stop">
-          <img class="header-logo-img" src="@/assets/logo_index.png" alt="one stop logo">
+          <img class="header-logo-img" src="@/assets/logo.png" alt="one stop logo">
         </router-link>
       </el-col>
       <el-col :span="17" class="header-nav">
@@ -34,7 +34,9 @@
             </router-link>
           </li>
           <li class="header-icon">
-            <a class="btn-search" href="javascript:;"></a>
+            <a class="btn-search" href="javascript:;">
+              <img src="@/assets/icon_search.png" alt="搜索">
+            </a>
           </li>
           <li class="header-icon">
             <mu-ddm />
@@ -46,7 +48,7 @@
 </template>
 
 <script>
-import MuDdm from '@/components/index/DropDownMenu'
+import MuDdm from '@/components/layout/DropDownMenu'
 import { mapGetters } from 'vuex'
 export default {
   name: 'Header',
@@ -80,7 +82,7 @@ export default {
 .text-center
   text-align center
 .header-logo-img
-  max-width 570px
+  max-width 400px
 .header-nav
   text-align center
   padding-bottom 30px
@@ -97,14 +99,23 @@ export default {
       text-overflow ellipsis
       white-space nowrap
       /* 文本溢出省略END */
+      @media screen and (min-width: 1800px)
+        font-size 2.8rem
       &:nth-child(2n)
         font-size 1.4rem
+        @media screen and (min-width: 1800px)
+          font-size 1.8rem
 .header-icon
   position relative
   a
     display inline-block
-    width 45px
-    height 45px
+    width 25%
   .btn-search
-    background url(../assets/icon_search.png)
+    img
+      float left
+      min-width 40px
+// 手机端菜单样式
+@media screen and (max-width: 640px)
+  h1
+    font-size 2rem
 </style>

@@ -37,7 +37,7 @@ export default {
 h2
   margin 60px 0 30px
   padding-top 45px
-  background url(../../assets/title_bg.png) top center no-repeat
+  background url(../../assets/index/title_bg.png) top center no-repeat
   font-size 3.5rem
   color #333
   text-align center

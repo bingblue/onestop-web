@@ -67,6 +67,7 @@ export default {
       this.goTo()
     },
     goTo () {
+      if (this.slideData.length <= 4) return
       // 获取<li>元素
       let domLi = this.$refs.ul.children[0]
       // 计算<li>宽度 + marginRight的值，marginRight为（宽度/7.5），见CSS
