@@ -1,6 +1,6 @@
 <template>
   <div @mouseenter="show = true" @mouseleave="show = false">
-    <a class="btn-user" href="javascript:;"></a>
+    <a class="btn-user" href="javascript:;"><iconfont icon="user" /></a>
     <ul class="submenu triangle" v-if="show">
       <li>
         <router-link to="/cart" title="我的购物车">
@@ -35,12 +35,8 @@ export default {
 <style scoped lang="stylus">
 a
   display inline-block
-  width 45px
-  height 45px
-.btn-search
-  background url(../../assets/icon_search.png)
-.btn-user
-  background url(../../assets/icon_user.png)
+  font-size 4rem
+  color #999
 .submenu
   position absolute
   z-index 99

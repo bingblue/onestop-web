@@ -34,8 +34,8 @@
             </router-link>
           </li>
           <li class="header-icon">
-            <a class="btn-search" href="javascript:;">
-              <img src="@/assets/icon_search.png" alt="搜索">
+            <a class="btn-search" href="javascript:;" title="搜索">
+              <iconfont icon="search" />
             </a>
           </li>
           <li class="header-icon">
@@ -110,10 +110,8 @@ export default {
   a
     display inline-block
     width 25%
-  .btn-search
-    img
-      float left
-      min-width 40px
+    color #999
+    font-size 4rem
 // 手机端菜单样式
 @media screen and (max-width: 640px)
   h1
