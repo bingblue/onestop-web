@@ -1,12 +1,12 @@
 <template>
   <header>
     <el-row>
-      <el-col :span="4" :offset="3" :xs="{span: 6, offset: 1}" class="text-center header-logo">
+      <el-col :span="4" :offset="3" :xs="{span: 6, offset: 1}" class="logo">
         <router-link to="/" title="one stop">
-          <img class="header-logo-img" src="@/assets/logo.png" alt="one stop logo">
+          <img class="logo-img" src="@/assets/logo.png" alt="one stop logo">
         </router-link>
       </el-col>
-      <el-col :span="17" class="header-nav">
+      <el-col :span="17" class="nav">
         <ul>
           <li>
             <router-link to="/" title="首页">
@@ -33,12 +33,12 @@
               <span>关注我们</span><span>SUBSCRIBE</span>
             </router-link>
           </li>
-          <li class="header-icon">
-            <a class="btn-search" href="javascript:;" title="搜索">
+          <li class="icon">
+            <el-button type="text" class="btn-search">
               <mu-iconfont icon="search" />
-            </a>
+            </el-button>
           </li>
-          <li class="header-icon">
+          <li class="icon">
             <mu-dropmenu />
           </li>
         </ul>
@@ -76,15 +76,13 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-.header-logo,
-.header-nav
+.logo,
+.nav
+  text-align center
   padding 50px 0 20px 0
-.text-center
-  text-align center
-.header-logo-img
+.logo-img
   max-width 400px
-.header-nav
-  text-align center
+.nav
   padding-bottom 30px
   &>ul>li
     display inline-block
@@ -105,7 +103,7 @@ export default {
         font-size 1.4rem
         @media screen and (min-width: 1800px)
           font-size 1.8rem
-.header-icon
+.icon
   position relative
   a
     display inline-block
