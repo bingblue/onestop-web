@@ -91,4 +91,6 @@ footer
       @media screen and (max-width: 640px)
         display inline-block
         width 100%
+  .el-backtop
+    color #ff7edc
 </style>

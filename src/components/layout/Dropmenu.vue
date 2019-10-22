@@ -1,6 +1,6 @@
 <template>
   <div @mouseenter="show = true" @mouseleave="show = false">
-    <a class="btn-user" href="javascript:;"><mu-iconfont icon="user" /></a>
+    <el-button type="text" class="btn-user"><mu-iconfont icon="user" /></el-button>
     <ul class="submenu triangle" v-if="show">
       <li>
         <router-link to="/cart" title="我的购物车">
@@ -33,7 +33,7 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-a
+.btn-user
   display inline-block
   font-size 4rem
   color #999
@@ -80,4 +80,9 @@ a
   top -9px
   left 50%
   margin-left -10px
+
+// 手机端菜单样式
+@media screen and (max-width: 768px)
+  .btn-user
+    font-size 3rem
 </style>
