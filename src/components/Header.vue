@@ -61,7 +61,8 @@ export default {
   data () {
     return {
       isShow: {
-        menu: false
+        menu: true,
+        width: ''
       }
     }
   },
@@ -75,9 +76,21 @@ export default {
     toggle () {
       this.isShow.menu = !this.isShow.menu
     },
+    resize () {
+      this.isShow.width = document.body.clientWidth
+      this.isShow.menu = this.isShow.width >= 768
+    },
     logout () {
       this.$store.commit('LOGOUT')
       this.$router.push('/login')
+    }
+  },
+  mounted () {
+    window.onresize = () => {
+      // this.resize()
+      return (() => {
+        this.resize()
+      })()
     }
   }
 }
