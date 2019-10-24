@@ -7,6 +7,7 @@
         </router-link>
       </el-col>
       <el-col :span="17" :xs="{span: 3, offset: 11}" class="nav">
+        <transition name="el-fade-in">
         <ul v-show="showMenu">
           <li>
             <router-link to="/" title="首页">
@@ -42,6 +43,7 @@
             <mu-dropmenu />
           </li>
         </ul>
+        </transition>
         <el-button type="text" class="btn-menu" @click="toggle">
           <mu-iconfont icon="menu" />
         </el-button>
