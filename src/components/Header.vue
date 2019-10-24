@@ -7,7 +7,7 @@
         </router-link>
       </el-col>
       <el-col :span="17" :xs="{span: 3, offset: 11}" class="nav">
-        <ul v-show="isShow.menu">
+        <ul v-show="showMenu">
           <li>
             <router-link to="/" title="首页">
               <span>首页</span><span>HOME</span>
@@ -60,10 +60,8 @@ export default {
   },
   data () {
     return {
-      isShow: {
-        menu: true,
-        width: ''
-      }
+      showMenu: document.body.clientWidth >= 768,
+      width: ''
     }
   },
   computed: {
@@ -72,13 +70,14 @@ export default {
       'nickName'
     ])
   },
+  watch: {
+    width (newWidth) {
+      this.showMenu = newWidth >= 768
+    }
+  },
   methods: {
     toggle () {
-      this.isShow.menu = !this.isShow.menu
-    },
-    resize () {
-      this.isShow.width = document.body.clientWidth
-      this.isShow.menu = this.isShow.width >= 768
+      this.showMenu = !this.showMenu
     },
     logout () {
       this.$store.commit('LOGOUT')
@@ -87,10 +86,7 @@ export default {
   },
   mounted () {
     window.onresize = () => {
-      // this.resize()
-      return (() => {
-        this.resize()
-      })()
+      this.width = document.body.clientWidth
     }
   }
 }
