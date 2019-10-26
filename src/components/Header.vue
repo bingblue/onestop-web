@@ -7,42 +7,42 @@
         </router-link>
       </el-col>
       <el-col :span="17" :xs="{span: 3, offset: 11}" class="nav">
-        <transition name="el-fade-in">
-        <ul v-show="showMenu">
-          <li>
-            <router-link to="/" title="首页">
-              <span>首页</span><span>HOME</span>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/shop" title="商品">
-              <span>商品</span><span>SHOP</span>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/" title="新品">
-              <span>新品</span><span>NEW</span>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/" title="联系我们">
-              <span>联系我们</span><span>CONTACT</span>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/" title="关注我们">
-              <span>关注我们</span><span>SUBSCRIBE</span>
-            </router-link>
-          </li>
-          <li class="icon">
-            <el-button type="text" class="btn-search">
-              <mu-iconfont icon="search" />
-            </el-button>
-          </li>
-          <li class="icon user">
-            <mu-dropmenu />
-          </li>
-        </ul>
+        <transition name="move">
+          <ul v-show="showMenu">
+            <li class="active">
+              <router-link to="/" title="首页">
+                <span>首页</span><span>HOME</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/shop" title="商品">
+                <span>商品</span><span>SHOP</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/" title="新品">
+                <span>新品</span><span>NEW</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/" title="联系我们">
+                <span>联系我们</span><span>CONTACT</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/" title="关注我们">
+                <span>关注我们</span><span>SUBSCRIBE</span>
+              </router-link>
+            </li>
+            <li class="icon">
+              <el-button type="text" class="btn-search">
+                <mu-iconfont icon="search" />
+              </el-button>
+            </li>
+            <li class="icon user">
+              <mu-dropmenu />
+            </li>
+          </ul>
         </transition>
         <el-button type="text" class="btn-menu" @click="toggle">
           <mu-iconfont icon="menu" />
@@ -53,8 +53,8 @@
 </template>
 
 <script>
-import MuDropmenu from '@/components/layout/Dropmenu'
 import { mapGetters } from 'vuex'
+import MuDropmenu from '@/components/layout/Dropmenu'
 export default {
   name: 'Header',
   components: {
@@ -105,6 +105,10 @@ export default {
 .nav
   padding-bottom 10px
   &>ul>li
+    &:hover,
+    &.active
+      span
+        color #ff7edc
     display inline-block
     width 10%
     span
@@ -180,4 +184,10 @@ export default {
       float right
       font-size 3rem
       color #ff7edc
+/* 菜单动画 */
+.move-enter-active
+  transform translateX(0)
+  transition: all .8s
+.move-enter
+  transform translateX(-200px)
 </style>
